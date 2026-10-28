@@ -35,47 +35,47 @@ public class ConstrutorArvore {
         NoDecisao usarPalmatoria =
                 new NoDecisao("Voce usaria palmatoria em suas aulas?", null);
 
-        usarPalmatoria.sim = severinoGomes;
-        usarPalmatoria.nao = leoLeo;
+        usarPalmatoria.setSim(severinoGomes);
+        usarPalmatoria.setNao(leoLeo);
 
         NoDecisao bolaoVirtual =
                 new NoDecisao("Voce eh dono de bolao virtual?", null);
 
-        bolaoVirtual.sim = carlinho;
-        bolaoVirtual.nao = tobiasTiago;
+        bolaoVirtual.setSim(carlinho);
+        bolaoVirtual.setNao(tobiasTiago);
 
         //Terceiro nivel - direito
         NoDecisao correrMaratona =
                 new NoDecisao("Voce ja correu uma maratona?", null);
 
-        correrMaratona.sim = stuwartAndre;
-        correrMaratona.nao = limaGilbala;
+        correrMaratona.setSim(stuwartAndre);
+        correrMaratona.setNao(limaGilbala);
 
         NoDecisao conjugeEsquisito =
                 new NoDecisao("O seu conjuge bate bem da cabeça?", null);
 
-        conjugeEsquisito.sim = maraisaMaiara;
-        conjugeEsquisito.nao = oraPois;
+        conjugeEsquisito.setSim(oraPois);
+        conjugeEsquisito.setNao(maraisaMaiara);
 
         //Segundo nivel
         NoDecisao gostarAlunos =
                 new NoDecisao("Você gosta dos seus alunos?", null);
 
-        gostarAlunos.sim = usarPalmatoria;
-        gostarAlunos.nao = bolaoVirtual;
+        gostarAlunos.setSim(usarPalmatoria);
+        gostarAlunos.setNao(bolaoVirtual);
 
         NoDecisao surtarAula =
                 new NoDecisao("Você já surtou em aula?", null);
 
-        surtarAula.sim = correrMaratona;
-        surtarAula.nao = conjugeEsquisito;
+        surtarAula.setSim(correrMaratona);
+        surtarAula.setNao(conjugeEsquisito);
 
         // Primeiro nivel
         NoDecisao raiz =
                 new NoDecisao("Você dá aula no técnico?", null);
 
-        raiz.sim = gostarAlunos;
-        raiz.nao = surtarAula;
+        raiz.setSim(gostarAlunos);
+        raiz.setNao(surtarAula);
 
         return raiz;
     }
